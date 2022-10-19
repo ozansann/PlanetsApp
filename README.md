@@ -30,5 +30,4 @@ I developed this application using the Api at https://planets-info-by-newbapi.p.
 
 ## Instructions
  
-* Replace the variable API_KEY in Constants/AppConstants with the api key from the site https://newsapi.org/.
-* The free version of the api allows up to 100 requests per day.
+* Replace the variable API_KEY in Constants/AppConstants with the api key from the site https://rapidapi.com/newbAPIOfficial/api/planets-info-by-newbapi/
