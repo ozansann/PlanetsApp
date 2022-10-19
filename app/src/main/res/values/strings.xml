@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Explore Planets</string>
+    <string name="main_menu_item_1">Explore Planets</string>
+    <string name="main_menu_item_2">About</string>
+    <string name="main_menu_item_3">Settings</string>
+    <string name="please_wait">Please Wait...</string>
+    <string name="view_on_vikipedia">VIEW ON VIKIPEDIA</string>
+    <string name="close">Close</string>
+    <string name="search_by_planet_name">Gezegen adı giriniz</string>
+</resources>

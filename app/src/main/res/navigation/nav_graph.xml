@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/planetListFragment"
+        android:name="com.od.planetsapp.Fragments.PlanetListFragment"
+        android:label="fragment_planet_list"
+        tools:layout="@layout/fragment_planet_list" >
+        <action
+            android:id="@+id/action_planetListFragment_to_planetDetailFragment"
+            app:destination="@id/planetDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/planetDetailFragment"
+        android:name="com.od.planetsapp.Fragments.PlanetDetailFragment"
+        android:label="fragment_planet_detail"
+        tools:layout="@layout/fragment_planet_detail" >
+        <action
+            android:id="@+id/action_planetDetailFragment_to_viewWebPageFragment"
+            app:destination="@id/viewWebPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.od.planetsapp.Fragments.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_planetListFragment"
+            app:destination="@id/planetListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewWebPageFragment"
+        android:name="com.od.planetsapp.Fragments.ViewWebPageFragment"
+        android:label="fragment_view_web_page"
+        tools:layout="@layout/fragment_view_web_page" />
+</navigation>

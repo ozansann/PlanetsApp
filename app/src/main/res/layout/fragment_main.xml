@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Fragments.MainFragment">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_activity"
+        android:weightSum="1.0">
+        <LinearLayout
+            android:id="@+id/menu_relative_header"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:background="@drawable/panel_background"
+            android:layout_gravity="center">
+            <ImageView
+                android:id="@+id/panel_image_logo"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_alignParentStart="true"
+                android:paddingLeft="40dp"
+                android:paddingRight="20dp"
+                android:layout_gravity="center"
+                android:background="#F9F7FA"
+                android:src="@drawable/background" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/lyt_main_menu1"
+                    style="@style/main_menutile_lyt"
+                    android:layout_weight="1"
+                    android:weightSum="6">
+                    <ImageView
+                        android:id="@+id/img_menu1"
+                        android:layout_weight="5"
+                        style="@style/main_menutile_img"
+                        android:src="@drawable/planet" />
+                    <TextView
+                        android:id="@+id/tv_menu1"
+                        android:layout_weight="1"
+                        style="@style/main_menutile_txt"
+                        android:text="@string/main_menu_item_1"
+                        android:textStyle="bold"
+                        android:textSize="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/lyt_main_menu2"
+                    style="@style/main_menutile_lyt"
+                    android:weightSum="6">
+                    <ImageView
+                        android:id="@+id/img_menu2"
+                        style="@style/main_menutile_img"
+                        android:layout_weight="5"
+                        android:src="@drawable/info" />
+                    <TextView
+                        android:id="@+id/tv_menu2"
+                        style="@style/main_menutile_txt"
+                        android:layout_weight="1"
+                        android:text="@string/main_menu_item_2"
+                        android:textStyle="bold"
+                        android:textSize="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/lyt_main_menu3"
+                    style="@style/main_menutile_lyt"
+                    android:weightSum="6">
+                    <ImageView
+                        android:id="@+id/img_menu3"
+                        style="@style/main_menutile_img"
+                        android:layout_weight="5"
+                        android:src="@drawable/settings" />
+                    <TextView
+                        android:id="@+id/tv_menu3"
+                        style="@style/main_menutile_txt"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:text="@string/main_menu_item_3"
+                        android:textSize="10dp" />
+                </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.05"
+            android:orientation="horizontal"
+            android:layout_gravity="right">
+
+            <TextView
+                android:id="@+id/tv_app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textSize="10dp"
+                android:text="@string/app_name"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/tv_version"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textSize="10dp"
+                android:text="@string/versionName"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp" />
+        </LinearLayout>
+        </LinearLayout>
+</LinearLayout>
