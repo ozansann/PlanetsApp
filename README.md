@@ -18,6 +18,7 @@ I developed this application using the Api at https://planets-info-by-newbapi.p.
 * MVVM
 * Navigation
 * Retrofit
+* WebView
 * Picasso
 * Data Binding
 * View Binding
