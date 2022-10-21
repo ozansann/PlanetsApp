@@ -19,7 +19,7 @@ I developed this application using the Api at https://planets-info-by-newbapi.p.
 * Navigation
 * Retrofit
 * WebView
-* Picasso
+* Glide
 * Data Binding
 * View Binding
 * Gson
